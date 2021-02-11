@@ -2,9 +2,19 @@ import { IPart, IFeature, IFeatureData } from './models/apiServiceModel'
 
 export default class ApiService {
 
-  public static async getData(updated = false):  Promise<IPart> {
-    const url = updated ? '/api/update' : '/api/data';
-    const response = await fetch(url);
+  public static async getData():  Promise<IPart> {
+    const response = await fetch('/api/data');
+    const body = await response.json();
+    if (response.status !== 200) throw Error(body.message);
+
+    return {
+      title: body.title,
+      features: this.mapPartFeatures(body.data)
+    }
+  }
+
+  public static async updateData():  Promise<IPart> {
+    const response = await fetch('/api/update');
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
 

@@ -12,7 +12,7 @@ const Home = () =>{
     ApiService.getData().then(data => setData(data));
     
     setInterval(() => {
-      ApiService.getData(true).then(data => setData(data))
+      ApiService.updateData().then(data => setData(data))
     }, 10000);
   }, [])
 
