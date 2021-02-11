@@ -1,15 +1,14 @@
-# express-react
+# React and express assigment
 
-To make it run first you need to install the depencies of both proyects.
+### Steps to run the project:
+Run `npm install` on the root directory and in the client directory.
 
-On the root directory:
-npm install
+Ones both project's dependencies are installed just run this command on the root directory:
 
-cd/client/
-npm install
+`npm run dev`
 
-Ones the depencies are installed you can simply run the following command on the root directory:
+>This will run the server and the client at the same time and with a single console.
 
-npm run dev
+### TODO:
 
-This will run the server and the client at the same time and with a single console.
+TODO, TODO LIST
