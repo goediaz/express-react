@@ -8,7 +8,7 @@ const data5 = require('../data/data.5.json');
 const dataArray = [data1, data2, data3, data4, data5];
 
 router.get('/data', (req, res) => {
-  res.send(dataArray[getRandomInt(0,5)])
+  res.send(dataArray[getRandomInt(0,4)])
 });
 
 router.get('/update', (req, res) => {
