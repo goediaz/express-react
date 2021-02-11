@@ -3,7 +3,7 @@
 ### Steps to run the project:
 Run `npm install` on the root directory and in the client directory.
 
-Ones both project's dependencies are installed just run this command on the root directory:
+Once both project's dependencies are installed just run this command on the root directory:
 
 `npm run dev`
 
