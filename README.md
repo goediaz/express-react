@@ -36,5 +36,6 @@
 ## Comments on implementation
 
 - I decided to don't use Redux with Thunk to call the api in the reducers because of the quatity of files and structure this generates. It would have been a lot of extra files and logic that would only have complicated the exercise.
+- The service file on the client and the both endpoints on the api are mostly the same. It could be merged only in one endpoint or function (in the client) for this assigment but I though is a good idea to have 2 separate endpoints/functions just to have a more realistic example (Even if it means to duplicate code).
 - I really enjoyed thinking and designing the whole process and not only the API. I really wanted to play more with node. For example I wanted to try Sails.js just to learn something new but I couldn't make it in time.
 - I also really wanted to use docker in this assignament to give it a try with this application (This will probably be implemented in the future).
