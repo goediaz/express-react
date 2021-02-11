@@ -1,14 +1,40 @@
 # React and express assigment
 
-### Steps to run the project:
-Run `npm install` on the root directory and in the client directory.
+## Steps to run:
 
-Once both project's dependencies are installed just run this command on the root directory:
+- Install dependencies of the server project:
+
+`cd server`
+
+`npm install`
+
+- Install dependencies of the client project:
+
+`cd client`
+
+`npm install`
+
+
+- Once both project's dependencies are installed just run this command at the `server directory`:
 
 `npm run dev`
 
->This will run the server and the client at the same time and with a single console.
+>This will run the server and the client at the same time and with a single console. The server should be running on port `5000` and the client on `3000`.
 
-### TODO:
+- Your default browser should open directly with `http://localhost:3000` as URL.
 
-TODO, TODO LIST
+## TODO:
+
+- Try to use a masonry design for a main component in order to be more faithful to the original example.
+- Make each features card able to render 2 tables of features inside.
+- Create a Parts Generator on the server side to test and display more diverse quantity of data.
+- Since the target of the assignement was a low-end machine I think it's a good idea to implement code spliting to reduce the bundle.
+- I'm not satified with how the UI looks and how the cards are displayed. It could use a rework of the css.
+
+
+
+## Comments on implementation
+
+- I decided to don't use Redux with Thunk to call the api in the reducers because of the quatity of files and structure this generates. It would have been a lot of extra files and logic that would only have complicated the exercise.
+- I really enjoyed thinking and designing the whole process and not only the API. I really wanted to play more with node. For example I wanted to try Sails.js just to learn something new but I couldn't make it in time.
+- I also really wanted to use docker in this assignament to give it a try with this application (This will probably be implemented in the future).
