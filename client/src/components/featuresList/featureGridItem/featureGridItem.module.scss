@@ -1,0 +1,22 @@
+@import '../../../styles/variables';
+
+.gridItem {
+  text-align: center;
+  margin: 2px;
+
+  &.correct {
+    color: $var-green;
+  }
+
+  &.warning {
+    color: $var-yellow;
+  }
+
+  &.error {
+    color: $var-red;
+  }
+
+  &.undefined {
+    color: $var-undefined
+  }
+}

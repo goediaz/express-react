@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+.featureListContainer {
+  margin: 5px;
+  min-width: 250px;
+
+  .featureListHeader {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+
+    .headerLeft {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 20px;
+      
+      p {
+        margin-left: 10px;
+      }
+    }
+    
+    .headerRight {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      margin-right: 20px;
+    }
+
+    &.correct {
+      background-color: $var-green;
+    }
+
+    &.warning {
+      background-color: $var-yellow;
+    }
+
+    &.error {
+      background-color: $var-red;
+    }
+  }
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    .gridItem {
+      text-align: center;
+      margin: 2px;
+      &.gridItemHeader {
+        font-weight: bold;
+      }
+    }
+  }
+  .featureListFooter {
+    background-color: whitesmoke;
+    height: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    line-height: 25px;
+  }
+}

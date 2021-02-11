@@ -1,0 +1,17 @@
+.partContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .partTitle {
+    text-align: left;
+    font-size: 24px;
+    margin-left: 50px;
+  }
+
+  .featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+  }
+}
